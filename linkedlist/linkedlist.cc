@@ -22,7 +22,7 @@ namespace linkedlist {
     return false;
   }
 
-  void LinkedList::append(int item) {
+  void LinkedList::append(int const item) {
    
     Node* new_node = new Node(item);
 
@@ -35,7 +35,7 @@ namespace linkedlist {
 
   }
 
-  void LinkedList::prepend(int item) {
+  void LinkedList::prepend(int const item) {
       
     Node* new_node = new Node(item);
 
