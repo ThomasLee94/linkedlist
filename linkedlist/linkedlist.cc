@@ -24,16 +24,27 @@ namespace linkedlist {
 
   void LinkedList::append(int item) {
    
+    Node* new_node = new Node(item);
+
     if (true!=is_empty()){
       Node* node = tail;
-      Node* new_node = new Node(item);
-      
       node->next = new_node;
     }
 
-    Node* new_node = new Node(item);
-    this->head  = new_node;
+    this->tail = new_node;
 
+  }
+
+  void LinkedList::prepend(int item) {
+      
+    Node* new_node = new Node(item);
+
+    if (true!=is_empty()){
+      Node* node = head;
+      new_node->next = node;
+    }
+
+    this->head = new_node;
   }
 
 } // namespace linkedlist

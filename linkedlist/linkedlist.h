@@ -15,6 +15,7 @@ public:
   int size;
   bool is_empty() const;
   void append(int item);
+  void prepend(int item);
 
 };
 
