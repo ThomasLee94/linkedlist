@@ -57,10 +57,33 @@ namespace linkedlist {
 
     for (int i=0; i<=index; i++){
       current_node->next = current_node; 
+      next_node = current_node->next;
     }
 
     new_node->next = next_node;
     current_node->next = new_node;
+
+  }
+
+  void LinkedList::delete_(int const item) {
+    
+    bool found = false;
+    Node* node = head;
+    Node* previous = nullptr;
+
+    for (int i=0; i <= size; i++){
+      if (node.data == item) {
+        found = true;
+      }
+      previous = node;
+      node->next = node;
+    }
+    
+    if (found) {
+      previous = node->next;
+      node->next = nullptr;
+      size--;
+    }
 
   }
 
