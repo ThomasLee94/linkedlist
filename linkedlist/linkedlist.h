@@ -14,8 +14,9 @@ public:
   Node* tail;
   int size;
   bool is_empty() const;
-  void append(int item);
-  void prepend(int item);
+  void append(int const item);
+  void prepend(int const item);
+  void insert(int const item, int const index);
 
 };
 

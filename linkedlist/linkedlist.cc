@@ -47,4 +47,21 @@ namespace linkedlist {
     this->head = new_node;
   }
 
+  void LinkedList::insert(int const item, int const index) {
+    
+    Node* new_node = new Node(item);
+
+    Node* current_node = head;
+
+    Node* next_node = nullptr;
+
+    for (int i=0; i<=index; i++){
+      current_node->next = current_node; 
+    }
+
+    new_node->next = next_node;
+    current_node->next = new_node;
+
+  }
+
 } // namespace linkedlist
