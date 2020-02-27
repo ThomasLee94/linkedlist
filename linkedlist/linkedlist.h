@@ -1,3 +1,4 @@
+#ifndef LINKEDLIST_H_
 #define LINKEDLIST_H_
 
 #include "node.h"
@@ -22,3 +23,5 @@ public:
 };
 
 }; // namespace linkedlist
+
+#endif // LINKEDLIST_H_ 
