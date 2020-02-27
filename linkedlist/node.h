@@ -1,3 +1,4 @@
+#ifndef NODE_H_
 #define NODE_H_
 
 namespace linkedlist {
@@ -12,3 +13,5 @@ namespace linkedlist {
   };
     
 }  // namespace linkedlist
+
+#endif // NODE_H
