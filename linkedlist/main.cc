@@ -2,17 +2,16 @@
 
 #include <iostream>
 #include <vector>
-
-namespace linkedlist {
-    
+ 
 int main(int argc, char** argv) {
   std::vector<int> nums({1, 2, 3, 4, 5});
 
-  LinkedList linked_list_obj(nums);
+  linkedlist::LinkedList linked_list_obj = linkedlist::LinkedList(nums);
 
   std::cout << "----- before deletion -----" << std::endl;
 
-  Node* node = linked_list_obj.head;
+  linkedlist::Node* node = linked_list_obj.head;
+
   for (int i=0; i < linked_list_obj.size; i++) {
     std::cout << node->data << std::endl;
     node = node->next;
@@ -23,6 +22,7 @@ int main(int argc, char** argv) {
   std::cout << "***** after deletion *****" << std::endl;
 
   node = linked_list_obj.head;
+
   for (int i=0; i < linked_list_obj.size; i++) {
     std::cout << node->data << std::endl;
     node = node->next;
@@ -31,4 +31,3 @@ int main(int argc, char** argv) {
   return 0;
 }
 
-} // namespace linkedlist

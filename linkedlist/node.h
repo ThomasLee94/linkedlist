@@ -3,9 +3,11 @@
 namespace linkedlist {
 
   struct Node {
-    Node(int data);
     int data;
     Node* next;
+
+    Node(const int data) {
+      this->data = data;
   };
     
 }; // namespace linkedlist

@@ -28,7 +28,7 @@ namespace linkedlist {
 
     if (true!=is_empty()){
       Node* node = tail;
-      node->next = new_node;
+      new_node = node->next;
     }
 
     this->tail = new_node;

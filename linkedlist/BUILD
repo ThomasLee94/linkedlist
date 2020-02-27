@@ -20,5 +20,4 @@ cc_binary(
   deps =  [
         ":linkedlist"
       ],
-
 )
