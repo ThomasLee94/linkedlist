@@ -8,6 +8,6 @@ namespace linkedlist {
 
     Node(const int data) {
       this->data = data;
-  };
+     };
     
 }; // namespace linkedlist
