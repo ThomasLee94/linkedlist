@@ -40,12 +40,12 @@ namespace linkedlist {
       
     Node* new_node = new Node(item);
 
-    if (true!=is_empty()){
-      Node* node = head;
-      new_node->next = node;
+    if (is_empty()){
+      head = new_node;
+      tail = new_node;
     }
 
-    this->head = new_node;
+    new_node->next = head;
   }
 
   void LinkedList::insert(int const item, int const index) {
