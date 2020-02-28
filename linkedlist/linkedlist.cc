@@ -33,6 +33,7 @@ namespace linkedlist {
     }
 
     tail->next = new_node;
+    size++;
 
   }
 
@@ -46,6 +47,7 @@ namespace linkedlist {
     }
 
     new_node->next = head;
+    size++;
   }
 
   void LinkedList::insert(int const item, int const index) {
@@ -63,6 +65,8 @@ namespace linkedlist {
 
     new_node->next = next_node;
     current_node->next = new_node;
+    size++;
+  }
 
   }
 
