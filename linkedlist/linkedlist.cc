@@ -66,7 +66,6 @@ namespace linkedlist {
     new_node->next = next_node;
     current_node->next = new_node;
     size++;
-  }
 
   }
 
