@@ -44,19 +44,9 @@ void LinkedList::prepend(const int item) {
 
 void LinkedList::insert(const int item, const int index) {
   Node* new_node = new Node(item);
+  Node* index_node = get_node(index);
+  Node* previous_node = get_node(index-1); 
 
-  Node* current_node = head;
-
-  Node* next_node = nullptr;
-
-  for (int i = 0; i <= index; i++) {
-    current_node->next = current_node; 
-    next_node = current_node->next;
-  }
-
-  new_node->next = next_node;
-  current_node->next = new_node;
-  size++;
 }
 
 void LinkedList::delete_(const int item) {
