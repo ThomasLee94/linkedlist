@@ -16,11 +16,7 @@ namespace linkedlist {
   }
 
   bool LinkedList::is_empty() const {
-    if (size==0){
-      return true;
-    }
-
-    return false;
+    return size == 0;
   }
 
   void LinkedList::append(int const item) {
