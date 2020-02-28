@@ -27,12 +27,12 @@ namespace linkedlist {
    
     Node* new_node = new Node(item);
 
-    if (true!=is_empty()){
-      Node* node = tail;
-      new_node = node->next;
+    if (is_empty()){
+      head = new_node;
+      tail = new_node;
     }
 
-    this->tail = new_node;
+    tail->next = new_node;
 
   }
 
