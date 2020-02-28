@@ -10,14 +10,14 @@ cc_library(
     srcs = ["linkedlist.cc"],
     hdrs = ["linkedlist.h"],
     deps = [
-          ":node"
-        ]
+        ":node"
+    ]
 )
 
 cc_binary(
   name = "main",
   srcs = ["main.cc"],
   deps =  [
-        ":linkedlist"
-      ],
+      ":linkedlist"
+  ],
 )

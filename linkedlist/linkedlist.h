@@ -10,15 +10,15 @@ namespace linkedlist {
 class LinkedList {
 
 public:
-  LinkedList(std::vector<int> &data);
+  LinkedList(const std::vector<int>& data);
   Node* head;
   Node* tail;
   int size;
   bool is_empty() const;
-  void append(int const item);
-  void prepend(int const item);
-  void insert(int const item, int const index);
-  void delete_(int const item);
+  void append(const int item);
+  void prepend(const int item);
+  void insert(const int item, const int index);
+  void delete_(const int item);
 
 };
 

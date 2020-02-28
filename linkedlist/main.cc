@@ -6,7 +6,7 @@
 int main(int argc, char** argv) {
   std::vector<int> nums({1, 2, 3, 4, 5});
 
-  linkedlist::LinkedList linked_list_obj = linkedlist::LinkedList(nums);
+  linkedlist::LinkedList linked_list_obj(nums);
 
   std::cout << "----- before deletion -----" << std::endl;
 
