@@ -3,14 +3,14 @@
 
 namespace linkedlist {
 
-  struct Node {
-    int data;
-    Node* next;
+struct Node {
+  int data;
+  Node* next;
 
-    Node(const int data) {
-      this->data = data;
-     }
-  };
+  Node(const int data) {
+    this->data = data;
+   }
+};
     
 }  // namespace linkedlist
 
