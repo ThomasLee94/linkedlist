@@ -7,6 +7,7 @@ namespace linkedlist {
   LinkedList::LinkedList(std::vector<int> &data) {
     this->head = nullptr;
     this->tail = nullptr;
+    this->size = 0;
     
 
     for (int element: data) {
@@ -86,5 +87,6 @@ namespace linkedlist {
     }
 
   }
+
 } // namespace linkedlist
 
