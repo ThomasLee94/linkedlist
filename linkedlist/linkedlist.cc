@@ -4,7 +4,7 @@
 
 namespace linkedlist {
   
-LinkedList::LinkedList(const std::vector<int>& data) {
+LinkedList::LinkedList(const std::vector<int> &data) {
   this->head = nullptr;
   this->tail = nullptr;
   this->size = 0;
@@ -45,7 +45,7 @@ void LinkedList::prepend(const int item) {
 Node LinkedList::get_node(const int index) {
   Node* current_node = head;
   
-  for (int i = 0; i <= index; i++) {
+  for (int i = 1; i <= index; i++) {
     current_node = current_node->next; 
   }
 
