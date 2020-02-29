@@ -68,8 +68,10 @@ void LinkedList::insert(const int item, const int index) {
   Node* index_node = get_node(index);
   Node* previous_node = get_node(index-1); 
 
+  // update pointers
   new_node->next = index_node;
   previous_node->next = new_node;
+  size++;
 }
 
 void LinkedList::delete_(const int item) {

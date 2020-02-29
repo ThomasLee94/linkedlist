@@ -4,9 +4,9 @@
 #include <vector>
  
 int main(int argc, char** argv) {
-  std::vector<int> nums({1, 2, 3, 4, 5});
+  std::vector<int> nums({1, 2, 3, 5});
 
-  linkedlist::LinkedList linked_list_obj(nums);
+  linkedlist::LinkedList linked_list_obj = linkedlist::LinkedList(nums);
 
   std::cout << "----- before deletion -----" << std::endl;
 
@@ -17,11 +17,20 @@ int main(int argc, char** argv) {
     node = node->next;
   }
 
+  linked_list_obj.insert(4, 3);
+
+  std::cout << "***** after insertion *****" << std::endl;
+
+  node = linked_list_obj.head;
+
+  for (int i=0; i < linked_list_obj.size; i++) {
+    std::cout << node->data << std::endl;
+    node = node->next;
+  }
+
   linked_list_obj.delete_(4);
 
   std::cout << "***** after deletion *****" << std::endl;
-
-  node = linked_list_obj.head;
 
   for (int i=0; i < linked_list_obj.size; i++) {
     std::cout << node->data << std::endl;
