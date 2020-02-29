@@ -45,7 +45,7 @@ void LinkedList::prepend(const int item) {
 Node LinkedList::get_node(const int index) {
   Node* current_node = head;
   
-  for (const int i = 0; i <= index; i++) {
+  for (int i = 0; i <= index; i++) {
     current_node = current_node->next; 
   }
 
