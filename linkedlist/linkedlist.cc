@@ -50,7 +50,7 @@ Node LinkedList::get_node(const int index) {
   }
 
   // dereference current node
-  return *current_node
+  return *current_node;
 }
 
 void LinkedList::insert(const int item, const int index) {
@@ -65,12 +65,16 @@ void LinkedList::insert(const int item, const int index) {
   }
 
   Node* new_node = new Node(item);
-  Node* index_node = get_node(index);
-  Node* previous_node = get_node(index-1); 
+  Node  index_node = get_node(index);
+  Node  previous_node = get_node(index-1); 
 
   // update pointers
-  new_node->next = index_node;
-  previous_node->next = new_node;
+  new_node->next = &index_node; // set the new nodes next to index node as ref
+  previous_node.next = new_node; // set previous nodes next to new node
+
+  // previous_node.next = next_node;
+  // next_node->next = &index_node;
+  
   size++;
 }
 

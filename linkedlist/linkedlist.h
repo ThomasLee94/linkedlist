@@ -10,7 +10,7 @@ namespace linkedlist {
 class LinkedList {
 
 public:
-  LinkedList(std::vector<int> &data);
+  LinkedList(const std::vector<int> &data);
   Node* head;
   Node* tail;
   int size;
