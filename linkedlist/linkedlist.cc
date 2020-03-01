@@ -88,11 +88,11 @@ void LinkedList::delete_(const int item) {
       found = true;
     }
     previous = node;
-    node->next = node;
+    node = node->next;
   }
   
   if (found) {
-    previous = node->next;
+    previous->next = node->next;
     node->next = nullptr;
     size--;
   }
