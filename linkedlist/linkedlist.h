@@ -16,10 +16,10 @@ public:
   int size;
   bool is_empty() const;
   Node get_node(const int item);
-  void append(int const item);
-  void prepend(int const item);
-  void insert(int const item, int const index);
-  void delete_(int const item);
+  void append(const int ntem);
+  void prepend(const int item);
+  void insert(const int item, const int index);
+  void delete_(const int item);
 
 };
 
